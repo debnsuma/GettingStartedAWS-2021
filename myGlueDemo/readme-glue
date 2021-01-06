@@ -1,0 +1,26 @@
+
+Glue Data Catalog and Athena 
+----------------------------
+
+1. Store File in S3 
+2. Collect metabada with Glue ETL 
+3. Run Query using Athena 
+----------------------------
+
+1. Create a S3 bucket (Already Created : "aws-glue-suman")
+    - Upload the raw data : yellow_tripdata_2020-06.csv 
+
+2. Open Glue 
+    - Crawler   > Name "taxi_data_crawler"
+    - Path      > s3://aws-glue-suman/
+    - IAM Role  > default
+    - DB Name   > mydb
+    - Prefix    > taxi_
+
+3. Open Athena 
+    
+SELECT * FROM "mydb"."taxi_aws_glue_suman" limit 10;
+
+SELECT * FROM "mydb"."taxi_aws_glue_suman" 
+WHERE payment_type = 2
+limit 10;
