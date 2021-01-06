@@ -11,8 +11,7 @@ output_bucket = "demo-bucket-output-2021"
 
 @app.on_s3_event(bucket=input_bucket)
 def resize_image(event):
-    app.log.debug('Resizing the image from s3://%s/%s', 
-                  event.bucket, event.key)
+    app.log.debug(f'Resizing the image from s3://{event.bucket}/{event.key}')
     with tempfile.NamedTemporaryFile('w') as f:
         s3_client.download_file(event.bucket, event.key, f.name)
         resized_file = f.name + '.thumbnail.jpg'
