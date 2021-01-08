@@ -5,15 +5,15 @@
 -----------
 0. To to the S3 Demo Directory 
 
-cd /home/ec2-user/environment/code/GettingStartedAWS-2021/myS3CloudFrontDemo
+    - cd /home/ec2-user/environment/code/GettingStartedAWS-2021/myS3CloudFrontDemo
 
 1. Create a bucket 
 
-aws s3 mb s3://mys3demo-2021-123         # replace with your bucket name
+    - aws s3 mb s3://mys3demo-2021-123         # replace with your bucket name
 
 2. Upload the index.html file into the bucket 
 
-aws s3 cp index.html s3://mys3demo-2021-123/index.html
+    - aws s3 cp index.html s3://mys3demo-2021-123/index.html
 
 3. Open Console and go to S3 
 
