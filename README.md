@@ -1,8 +1,8 @@
-Bunch of small demos 
+### Bunch of small demos 
+-------------------------
 
-=======
-S3 Demo
-=======
+**S3 Demo**
+-----------
 0. To to the S3 Demo Directory 
 
 cd /home/ec2-user/environment/code/GettingStartedAWS-2021/myS3CloudFrontDemo
@@ -17,9 +17,10 @@ aws s3 cp index.html s3://mys3demo-2021-123/index.html
 
 3. Open Console and go to S3 
 
-===========
-Lambda Demo 
-===========
+
+**Lambda Demo**
+---------------
+
 1. Install Chalice 
     - sudo pip3.7 install chalice
 2. Create a Chalice Project 
@@ -38,9 +39,10 @@ Lambda Demo
 6. Deploy the app. 
     - chalice deploy 
 
-================    
-Glue/Athena Demo 
-================
+
+**Glue/Athena Demo**
+--------------------
+
 
 
 Glue Data Catalog and Athena 
