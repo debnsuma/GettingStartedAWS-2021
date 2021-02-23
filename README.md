@@ -5,7 +5,8 @@
 -----------
 0. To to the S3 Demo Directory 
 
-    - cd /home/ec2-user/environment/code/GettingStartedAWS-2021/myS3CloudFrontDemo
+    - cd /home/ec2-user/environment/GettingStartedAWS-2021/myS3CloudFrontDemo
+
 
 1. Create a bucket 
 
@@ -18,7 +19,7 @@
 3. Open Console and go to S3 
 
 
-**Lambda Demo**
+**Lambda Demo** 
 ---------------
 
 1. Install Chalice 
@@ -39,11 +40,11 @@
 6. Deploy the app. 
     - chalice deploy 
 
+7. Delete the aoo
+    - chalice delete 
 
 **Glue/Athena Demo**
 --------------------
-
-
 
 Glue Data Catalog and Athena 
 ----------------------------
